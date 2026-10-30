@@ -1,20 +1,20 @@
 class SbtServer < Formula
   desc "Warm sbt per project for agent-driven builds: the sbtd daemon and the sbtctl CLI"
   homepage "https://github.com/scottweaver/sbt-server"
-  version "0.1.2"
+  version "1.0.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/scottweaver/sbt-server/releases/download/v0.1.2/sbt-server-aarch64-apple-darwin.tar.xz"
-      sha256 "e39a3206c16647fa62ce3fa787caf390a254f750c150feaebc6086622a2f47f2"
+      url "https://github.com/scottweaver/sbt-server/releases/download/v1.0.0/sbt-server-aarch64-apple-darwin.tar.xz"
+      sha256 "268fdb4596b1b83f18fa373612c092f1701401f9033f1e53ad819acfa41ff709"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/scottweaver/sbt-server/releases/download/v0.1.2/sbt-server-x86_64-apple-darwin.tar.xz"
-      sha256 "3f28e2ab0a7e5ab6fb3e3500bf5383007dff56fdde28ccfd23c4cd10f8b1e303"
+      url "https://github.com/scottweaver/sbt-server/releases/download/v1.0.0/sbt-server-x86_64-apple-darwin.tar.xz"
+      sha256 "bd4eea239cb9487818fd09f067ac80d53425fed8ba8e9f4ae8cbc73124a3c8f3"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/scottweaver/sbt-server/releases/download/v0.1.2/sbt-server-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "e9fee74db3f7ba2ace9c9bd375722463ece51c46f0f6e6bef836516fd0215f87"
+    url "https://github.com/scottweaver/sbt-server/releases/download/v1.0.0/sbt-server-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "3d1e855de43537935df3a8435d424030509a8681cedbe77cda31198e48096398"
   end
   license "Apache-2.0"
 
